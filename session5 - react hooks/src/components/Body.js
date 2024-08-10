@@ -4,7 +4,7 @@ import resList from "../utils/mockData";
 
 const Body = () => {
   // Local State Variable
-  //   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+    const [listOfRestaurants, setListOfRestaurants] = useState(resList);
 
   // normal JS varaible
   /*
