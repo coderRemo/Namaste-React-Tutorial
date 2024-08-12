@@ -1,0 +1,56 @@
+--------------------------------------------------
+## PUSHING CODE IN GITHUB
+-------------------------
+
+git - A tool for version control that you use locally on your machine (supports branching / merging).
+github - a client (web-based platform) that hosts/stored Git repository
+
+
+--------------------------------------------------
+## npm
+-------------------------
+-> a package manager / standard repository of all the packages or libraries
+-> command: npm init
+   - this creates 'package.json'
+
+
+--------------------------------------------------
+## package.json
+-------------------------
+-> a configuration file of npm
+-> keeps track of what package version is installed in system
+-> while installing packages package.json creates 2 types of dependencies :
+	(1) devDependencies - required for development purpose
+	(2) dependencies - used in production also
+	
+	
+--------------------------------------------------
+## ^ (carat) vs. ~ (tilde)
+-------------------------
+                                        |-- update to minor version (1.2.0 to 1.x.x)
+                                        |-- new feature + bug fix + improvements
+(^) --|                                 |-- most recent minor version within the specified major version
+      |--- if written before version ---|
+(~) --|                                 |-- update to major version (1.2.0 to 1.2.x)
+                                        |-- no new feature introduced, only allow bug fixes & minor improvements
+                                        |-- matches most recent patch version within the specified minor version
+										
+
+--------------------------------------------------
+## npm install -D parcel
+-------------------------
+-> this install 'parcel' package
+-> -D = devDependencies
+-> creates 'package-lock.json' & 'node_modules' folder
+
+
+--------------------------------------------------
+## package-lock.json
+-------------------------
+-> this track the exact version of package installed
+
+
+--------------------------------------------------
+## node_modules
+-------------------------
+-> contains all code that is fetched from npm
